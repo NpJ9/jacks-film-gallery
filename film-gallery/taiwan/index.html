@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiwan — Film Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Film Archive</span>
+    <ul class="nav-links">
+      <li><a href="../index-a.html">Index</a></li>
+      <li><a href="index.html" class="active">Taiwan</a></li>
+      <li><a href="../vietnam/index.html">Vietnam</a></li>
+      <li><a href="../malaysia/index.html">Malaysia</a></li>
+    </ul>
+  </nav>
+
+  <a class="back-link" href="../index-a.html">← All collections</a>
+
+  <header class="gallery-header">
+    <h1>Taiwan</h1>
+    <p class="gallery-meta">2025 &nbsp;·&nbsp; 35mm film</p>
+  </header>
+
+  <!-- PHOTO GRID
+       Each .photo-item is clickable.
+       The JS reads all images from this grid
+       to build the lightbox. Add more <img>
+       tags here as you add photos to the folder. -->
+  <div class="gallery-grid">
+
+    <div class="photo-item">
+      <img src="../images/taiwan/Taiwan_2025_47.JPG" alt="Taiwan — 47">
+      <span class="photo-number">01</span>
+    </div>
+
+    <!--
+      HOW TO ADD MORE PHOTOS:
+      1. Drop the .jpg/.JPG into /images/taiwan/
+      2. Copy one of the blocks above
+      3. Update the src path and alt text
+      That's it. No database, no backend needed.
+    -->
+
+  </div>
+
+  <!-- LIGHTBOX OVERLAY
+       Hidden by default. JS adds/removes .active class. -->
+  <div class="lightbox" role="dialog" aria-label="Photo viewer">
+    <button class="lightbox-close" aria-label="Close">Close ✕</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">←</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="">
+    </div>
+    <button class="lightbox-nav lightbox-next" aria-label="Next">→</button>
+    <span class="lightbox-counter"></span>
+  </div>
+
+  <footer>
+    <span>Film Archive — 2025</span>
+    <span>Taiwan</span>
+  </footer>
+
+  <!-- Scripts go at the bottom so HTML loads first -->
+  <script src="../js/lightbox.js"></script>
+</body>
+</html>
